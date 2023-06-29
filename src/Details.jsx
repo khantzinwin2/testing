@@ -11,7 +11,7 @@ const Details = () => {
   const [isLoading,setIsLoading] = useState(true);
 
   const getDetails = async() =>{
-    const {data} = await axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id} `)
+    const {data} = await axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
     console.log(data?.meals[0])
     setMeal(data?.meals[0])
     setIsLoading(false)

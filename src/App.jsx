@@ -6,7 +6,7 @@ import Nav from './Nav'
 
 const App = () => {
   return (
-    <div  className=' container mx-auto'>
+    <div  className=' container mx-auto relative'>
       <Nav/>
       <Routes>
         <Route path="/" element={<Meal/>} />
